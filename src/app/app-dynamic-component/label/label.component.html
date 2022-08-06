@@ -1,0 +1,9 @@
+<ng-container *ngIf="config.visible">
+    <ng-container *ngIf="config.heading; else normalText">
+        <h3 [id]="config.id">{{data}}</h3>
+    </ng-container>
+
+    <ng-template #normalText>
+        <p [id]="config.id" [ngStyle]="config.style">{{data}}</p>
+    </ng-template>
+</ng-container>

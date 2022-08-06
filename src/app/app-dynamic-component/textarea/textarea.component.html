@@ -1,0 +1,16 @@
+<ng-container *ngIf="config.visible">
+    <div class="row">
+        <div [ngClass]="config.styleClass ? config.styleClass : ''">
+            <ng-container *ngIf="config.label">
+                <label [for]="config.id">{{config.label}}</label>
+            </ng-container>
+            <textarea 
+                class="form-control"
+                [placeholder]="config.placeholder"
+                [rows]="config.rows"
+                [id]="config.id"
+                [name]="config.id"
+                [value]="config.data"></textarea>
+        </div>
+    </div>
+</ng-container>

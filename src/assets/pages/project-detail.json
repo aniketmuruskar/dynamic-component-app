@@ -1,0 +1,48 @@
+{
+    "pageElements": [
+        {
+            "id": "projectDetailTitle",
+            "name": "projectDetailTitle",
+            "componentType": "label",
+            "visible": true,
+            "data": "Dynamic component loader",
+            "heading": true
+        },
+        {
+            "id": "projectDetailDescription",
+            "name": "projectDetailDescription",
+            "componentType": "label",
+            "style": {"color": "red", "font-style": "italic" },
+            "visible": true,
+            "data": "Component templates are not always fixed. An application might need to load new components at runtime. This cookbook shows you how to add components dynamically.",
+            "heading": false
+        },
+        {
+            "id": "projectCloudTechnology",
+            "name": "projectCloudTechnology",
+            "componentType": "radio",
+            "label": "Project cloud technology",
+            "styleClass": "mt-1",
+            "labelClass": "ms-2",
+            "value": "2",
+            "radioOptionList": [
+                { "key": "1", "value": "AWS" },
+                { "key": "2", "value": "MS Azure" },
+                { "key": "3", "value": "GCP" }
+            ],
+            "visible": true,
+            "disabled": false
+        },
+        {
+            "id": "projectFeedback",
+            "name": "projectFeedback",
+            "componentType": "textarea",
+            "label": "Project feedback",
+            "placeholder": "Enter project feedback",
+            "styleClass": "col-md-6 mt-3",
+            "rows": 5,
+            "visible": true,
+            "data": "This project is developed in Angular v14"
+        }
+    ]
+}

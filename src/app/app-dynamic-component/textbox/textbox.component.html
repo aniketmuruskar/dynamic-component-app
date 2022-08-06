@@ -1,0 +1,16 @@
+<ng-container *ngIf="config.visible">
+    <div class="row">
+        <div [ngClass]="config.styleClass ? config.styleClass : ''">
+            <ng-container *ngIf="config.label">
+                <label [for]="config.id">{{config.label}}</label>
+            </ng-container>
+            <input type="text"
+                class="form-control"
+                [placeholder]="config.placeholder"
+                [name]="config.id"
+                [value]="config.value"
+                [disabled]="config.disabled"
+            />
+        </div>
+    </div>
+</ng-container>

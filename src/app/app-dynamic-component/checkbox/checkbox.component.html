@@ -1,0 +1,15 @@
+<ng-container *ngIf="config.visible">
+    <div class="row">
+        <div [ngClass]="config.styleClass ? config.styleClass : ''">
+            <input type="checkbox"
+                class="form-check-input"
+                [name]="config.id"
+                [checked]="config.value"
+                [disabled]="config.disabled"
+            >
+            <ng-container *ngIf="config.label">
+                <label [for]="config.id" [ngClass]="config.labelClass ? config.labelClass : ''">{{config.label}}</label>
+            </ng-container>
+        </div>
+    </div>
+</ng-container>

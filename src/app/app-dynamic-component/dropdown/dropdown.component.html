@@ -1,0 +1,18 @@
+<ng-container *ngIf="config.visible">
+    <div class="row">
+        <div [ngClass]="config.styleClass ? config.styleClass : ''">
+            <ng-container *ngIf="config.label">
+                <label [for]="config.id">{{config.label}}</label>
+            </ng-container>
+            <select class="form-select" [id]="config.id" [name]="config.id" [disabled]="config.disabled">
+                <option [value]="">Please select</option>
+                <option 
+                    *ngFor="let item of config.dropdownList"
+                    [value]="item.key"
+                    [selected]="item.key === config.value">
+                    {{ item.value }}
+                </option>
+            </select>
+        </div>
+    </div>
+</ng-container>

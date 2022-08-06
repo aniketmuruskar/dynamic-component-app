@@ -1,0 +1,59 @@
+{
+    "pageElements": [
+        {
+            "id": "projectTitle",
+            "name": "projectTitle",
+            "componentType": "label",
+            "visible": true,
+            "data": "Dynamic component loader",
+            "heading": true
+        },
+        {
+            "id": "projectDescription",
+            "name": "projectDescription",
+            "componentType": "label",
+            "visible": true,
+            "data": "Component templates are not always fixed. An application might need to load new components at runtime. This cookbook shows you how to add components dynamically.",
+            "heading": false
+        },
+        {
+            "id": "projectName",
+            "name": "projectName",
+            "componentType": "textbox",
+            "label": "Project Name",
+            "placeholder": "Enter project name",
+            "styleClass": "col-md-6 mt-3",
+            "visible": true,
+            "disabled": false,
+            "value": "Dynamic component angular app"
+        },
+        {
+            "id": "projectStatus",
+            "name": "projectStatus",
+            "componentType": "dropdown",
+            "label": "Project Status",
+            "styleClass": "col-md-6 mt-3",
+            "visible": true,
+            "disabled": false,
+            "value": "2",
+            "dropdownList": [
+                { "key": "1", "value": "Not Started" },
+                { "key": "2", "value": "Kick off" },
+                { "key": "3", "value": "In Progress" },
+                { "key": "4", "value": "On Hold" },
+                { "key": "5", "value": "Completed" }
+            ]
+        },
+        {
+            "id": "projectApproved",
+            "name": "projectApproved",
+            "componentType": "checkbox",
+            "label": "Is project approved from the business?",
+            "styleClass": "mt-3",
+            "labelClass": "ms-2",
+            "visible": true,
+            "disabled": true,
+            "value": true
+        }
+    ]
+}
